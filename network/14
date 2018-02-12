@@ -1,0 +1,4 @@
+# Use the Reverse DNS to find out the name of the server linked to the 10.51.1.81 IP address
+echo "ldap-proxy.42.fr"
+
+# dig +short -x 10.51.1.81

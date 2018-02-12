@@ -1,0 +1,5 @@
+# What file contains the local DNS entries?
+echo "/etc/hosts"
+
+# https://www.tecmint.com/setup-local-dns-using-etc-hosts-file-in-linux/
+# ls -l /etc/hosts -> no sym link

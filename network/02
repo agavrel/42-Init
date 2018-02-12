@@ -1,0 +1,6 @@
+# Identify the IP address of the Ethernet interface
+ifconfig -L en0 | grep "inet " | cut -d " " -f 2
+
+# display the ethernet interface, located at label 'en0'
+# take the row with 'inet'
+# cut -d " " -f 2    --->   will take the result and extract the second word which is the IP address

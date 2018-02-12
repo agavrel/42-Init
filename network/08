@@ -1,0 +1,4 @@
+# Find the provider of slash16.org
+nslookup slash16.org | grep
+
+# we need to find the authoritative DNS servers. We can find it in the Name Server record

@@ -1,0 +1,8 @@
+# Get the complete path of the file that contains the IP address of the DNS server you’re using
+cat /var/run/resolv.conf
+
+# Deduction
+# etc/resolv.conf contains the IP address of the used DNS server
+# However 'ls -l etc/resolv.conf' will produce the following output:
+# lrwxr-xr-x  1 root  wheel  22 Nov 20  2016 /etc/resolv.conf -> ../var/run/resolv.conf
+# which is a symbolic link.
