@@ -1,2 +1,4 @@
-# Identify the network devices between your computer and the slash16.org domain
-traceroute slash16.org
+# Deduction : Identify the network devices between your computer and the slash16.org domain
+echo 'It is nat-1'
+
+# traceroute slash16.org

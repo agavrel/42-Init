@@ -1,0 +1,2 @@
+# Deduction : What file has to be modified to make it permanent?
+echo '/etc/hostname'

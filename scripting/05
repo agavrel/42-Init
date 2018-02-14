@@ -1,0 +1,5 @@
+# Write a script which displays 42
+
+# sudo apt-get install toilet
+toilet -f bigmono9 -F gay '42'
+# toilet -f bigmono9 -F metal '42'
