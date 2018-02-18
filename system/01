@@ -1,4 +1,4 @@
 # Deduction : In what file can you find the installed version of your Debian?
-echo '/etc/debian_version'
+/etc/debian_version
 
 #The file is located in /etc/debian_version

@@ -1,8 +1,8 @@
 # Write a script which updates all the package sources, then all the packages, and then logs everything in
 # a file named /var/log/update_script.log. Create a scheduled task for this script, once per week at 4 AM.
 
-# the ~/updater.sh file contains
-apt-get update && apt-get upgrade >> /var/log/update_script.log
+echo 'apt-get update && apt-get upgrade >> /var/log/update_script.log' >> ~/apt_update.sh
 
-# copy this line in the /etc/crontab file
-# 0  4    * * 1   root    sh ~/updater.sh
+# enter the following line to add it to crontab once and schedule the script at 4 am once per week:
+# echo '0  4    * * 1   root    sh ~/apt_update.sh' | crontab
+# crontab -l to check current crontabs and crontab -e to edit them

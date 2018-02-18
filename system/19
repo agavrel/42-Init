@@ -1,3 +1,6 @@
 # With the previous command, forbid all others
 iptables -P INPUT DROP
 iptables -P OUTPUT DROP
+
+#The following command will drop any packet coming from the IP address: iptables -I INPUT -s {IP-HERE} -j DROP
+# if nothing is specified all will be forbidden apart from what has been authorized

@@ -8,8 +8,8 @@ Memory Size : 1024
 Create a Virtual Hard Disk now
 VDI
 Dynamically allocated
-File location and storage: Storage-> Goinfre -> 42 username
-
+File location and storage:
+Storage/goinfre/42/username OR MacOS/sgoinfre/goinfre/Perso/username if you wish to have it on the network
 ```
 
 Once created, you will need to download Debian from the official site:
@@ -21,8 +21,10 @@ Settings -> Storage -> Controller IDE -> choose debian image and check Live CD/D
 Then Start the VM and follow steps, always select default settings except for :
 username : agavrel42
 password : root
-Partitions Disk -> choose yes
+Partitions Disk -> choose yes at the very end
+< ... you will have to wait like 3mn ... >
 Software selection -> Add 'KDE' and 'SSH'
+< ... you will have to wait like 5mn take a coffee ? ... >
 Install GRUB boot loader -> select '/dev/sda' (default suggested disk)
 ```
 
@@ -37,4 +39,10 @@ su - root
 Whenever you look for a specific file just use:
 ```
 find / -type f -name "specific_file" -print
+```
+
+If you want to copy paste from your OS to the VM or reversely :
+```
+To enable it, open VirtualBox and select the guest machine, then click the settings button or press Ctrl + S on your keyboard.
+Next, on the General page, select Advanced tab and make sure bidirectional is selected for Shared Clipboard as well as Drag’n’Drop options.
 ```

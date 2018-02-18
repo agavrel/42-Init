@@ -1,2 +1,2 @@
 # Deduction : What file contains the RSA keys that are authorized to connect via SSH?
-echo '~/.ssh/authorized_keys'
+~/.ssh/authorized_keys
